@@ -22,5 +22,5 @@ process.stdout.write('prompt > ');
 process.stdin.on('data', (userInput) => {
   userInput = userInput.toString().trim();
   //evaludateCmd is a function which will be implemented in the commands.js
-  commands.evaludateCmd(userInput);
+  commands.evaluateCmd(userInput);
 });
