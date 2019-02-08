@@ -20,8 +20,8 @@ function evaluateCmd(userInput) {
     case "cat":
       commandLibrary.cat(userInputArray.slice(1));
       break;
-    case "sort":
-      commandLibrary.sort(userInputArray.sort)
+    case "head":
+      commandLibrary.cat(userInputArray.slice(1));
   }
 }
 
@@ -38,6 +38,14 @@ const commandLibrary = {
       if (err) throw err;
       done(data); // if an error occurs we throw error otherwise we output the contents of filename with the done function
     });
+  },
+  "head": function(fullPath) {
+    const fileName = fullPath [0];
+    fs.readFile(fileName, (err, data) => {
+      if (err) throw err;
+      done(data);
+    });
+
   }
 };
 
