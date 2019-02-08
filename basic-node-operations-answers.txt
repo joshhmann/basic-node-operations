@@ -1,0 +1,6 @@
+1. sort: sort checks the contents of a file and rearranges each line in order from
+   wc: wc reads the input 
+
+2.
+
+6.
